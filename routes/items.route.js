@@ -3,18 +3,18 @@ module.exports = function(app) {
 	const url = '/items';
 
 	//Create items by CSV
-	app.get(url+'', items.getAllItem);
+	app.get(url+'', items.findAll);
 
 	//Create items by CSV
-	app.get(url+'/:id', items.getOneItem);
+	app.get(url+'/:id', items.findOne);
 
 	//Create items by CSV
-	app.post(url+'', items.createItem);
+	app.post(url+'', items.create);
 
 	//Create items by CSV
-	app.put(url+'/:id', items.updateItem);
+	app.put(url+'/:id', items.update);
 
 	//Create items by CSV
-	app.delete(url+'/:id', items.deleteItem);
+	app.delete(url+'/:id', items.delete);
 
 }

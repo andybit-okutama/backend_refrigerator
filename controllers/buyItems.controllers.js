@@ -5,22 +5,22 @@ var sequelize = db.sequelize;
 const buyItems = db.buy_items;
 	  Op = db.Sequelize.Op;
 
-exports.getAllBuyItem = function(req,res) {
+exports.findAll = function(req,res) {
 	res.status(200).send("get all");
 }
 
-exports.getOneBuyItem = function(req,res) {
+exports.findOne = function(req,res) {
 	res.status(200).send("get one");
 }
 
-exports.createBuyItem = function(req,res) {
+exports.create = function(req,res) {
 	res.status(200).send("create");
 }
 
-exports.updateBuyItem = function(req,res) {
+exports.update = function(req,res) {
 	res.status(200).send("update");
 }
 
-exports.deleteBuyItem = function(req,res) {
+exports.delete = function(req,res) {
 	res.status(200).send("delete");
 }

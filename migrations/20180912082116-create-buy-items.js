@@ -11,6 +11,15 @@ module.exports = {
       qty: {
         type: Sequelize.INTEGER
       },
+      expire_date: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
+      is_active: {
+        type: Sequelize.BOOLEAN,
+        allowNull:false,
+        defaultValue:true
+      },      
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
