@@ -58,7 +58,7 @@ app.use(expressValidator({
 })); 
 
 // // Set static  folder for route
-// require('./routes/account.route')(app);
+ require('./routes/items.route')(app);
 // require('./routes/answer_history.route')(app);
 // require('./routes/classes.route')(app);
 // require('./routes/course.route')(app);

@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     qty: DataTypes.INTEGER
   }, {});
   buy_items.associate = function(models) {
-  	ProbeProfile.belongsTo(models.items, { foreignKey: 'id' , as:'item'  });
+    buy_items.belongsTo(models.Items, { foreignKey: 'id', as:'item' });
   };
   return buy_items;
 };

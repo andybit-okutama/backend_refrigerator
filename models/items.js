@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     description: DataTypes.STRING
   }, {});
   Items.associate = function(models) {
-    Items.hasMany( buy_items, { as: 'buy_item' } );
+    Items.hasMany( models.buy_items, { as: 'buy_item' } );
   };
   return Items;
 };
