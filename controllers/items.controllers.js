@@ -15,7 +15,8 @@ exports.findAll = function(req,res) {
 				res.status(500).send(result);
 			}
 		});
-	});}
+	});
+}
 
 exports.findOne = function(req,res) {
 	sequelize.transaction((t) => {
@@ -115,13 +116,11 @@ findOneItems = function(id, t, callback) {
 }
 
 findAllItems = function(t, callback) {
-	return Items.findOne(
+	return Items.findAll(
 	{
 		where:{
 			is_active:true
 		}
-
-		
 	},
 	{
 		transaction:t

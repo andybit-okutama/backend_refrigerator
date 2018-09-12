@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     is_active: { type:DataTypes.BOOLEAN, allowNull:false, defaultValue:true },
   }, {});
   Items.associate = function(models) {
-    Items.hasMany( models.buy_items, { as: 'buy_item' } );
+    Items.hasMany( models.buy_items, { foreignKey: 'item_id', sourceKey: 'id' ,as: 'buy_item' } );
   };
   return Items;
 };
