@@ -1,0 +1,24 @@
+{
+	"development":{
+		"key": "AKIAIOTXJS6JJG5BLN5Q",
+		"secret":"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",
+		"amazon":"https://email.us-west-2.amazonaws.com",
+		"auth":{
+			"user":"noreply@nominator.jp"
+		}
+	},
+	"gmail":{
+		"host": "smtp.gmail.com",
+		"port":"465",
+		"secure":"true",
+		"auth":{
+			"type": "OAuth2",
+			"clientId":"631353332489-7gv60a3jkh8vogvkj0vouf0edmqvc3c2.apps.googleusercontent.com",
+			"clientSecret":"xxgVsPwBgY4zcEbS_9hqyvq4",
+			"refreshToken":"1/afyC0NJMr8a72u1QnZQ8lOcF4EbBLe2Qb1tACYpuMog",
+			"user":"globisnoreply@gmail.com",
+			"pass":"globis@123"
+		}
+	}
+
+}

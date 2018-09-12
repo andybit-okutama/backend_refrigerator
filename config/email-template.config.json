@@ -1,0 +1,6 @@
+{
+	"reset":{
+		"subject":"GAT パスワードリセットをリクエストしました",
+		"template":"reset.html"
+	}
+}
